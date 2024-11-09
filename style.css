@@ -1,0 +1,133 @@
+body {
+    background-color: #87CEEB;
+    width: 800px;
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #F88158;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .court {
+    background-color: #87CEEB;
+    height: 500px;
+    width: 700px;
+    container-type: flex;
+    position: relative;
+    left: 350px;
+    top: 50px;
+    
+  } */
+  
+
+/* .basketball-img {
+    position: relative;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    left: 250px;
+    top: 450px;
+    background-color: #F88158;
+} */
+
+
+#bb {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    left: 250px;
+    top: 300px;
+}
+
+
+
+.basketball {
+    /* border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    height: 150px;
+    width: 150px;
+    left: 100px;
+    top: 50px;
+    /* background-color: #F88158; */
+    /* animation-name: basketball-bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-name: hoop;
+    animation-duration: 5s; */
+    animation: basketball-bounce, hoop;
+    animation-duration: 2s, 4s;
+    animation-delay: 0s, 2s; 
+    /* animation-iteration-count: infinite;
+    animation: hoop 3s; */
+}
+  
+.hoop {
+    position: relative;
+    max-width: 40%;
+    height: 479px;
+    left: 1089px;
+    top: -130px;
+    /* animation-name: hoop; */
+    /* animation-duration: 2s; */
+    
+  }
+
+
+@keyframes basketball-bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+     40% {transform: translateY(-100px);} 
+     60% {transform: translateY(-100px);}
+  }
+
+/* @keyframes hoop {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+     40% {transform: translateY(-100px);} 
+     60% {transform: translateY(-100px);}
+    
+} */
+
+@keyframes hoop {
+    
+    0% {
+        transform: translateY(100);
+    } 
+
+    50% {
+        transform: translateY(-350px) translateX(740px);
+    }
+
+    70% {
+        transform: translateY(50px) translateX(500px);
+    }
+
+    80% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+    /* 20% {
+        transform: translateY(-300px);
+    } */
+
+    /* 50% {
+        transform: translateX(500px);
+    }
+
+    70% {
+        transform: translateY(300px);
+    } */
+    
+
+}
